@@ -1,0 +1,53 @@
+Guia de Conexões - Sistema de Proteção de Tomada com Arduino Uno
+ALIMENTAÇÃO PRINCIPAL (PROTOBOARD)
+
+Pino 5V do Arduino Uno -> Linha de Alimentação Positiva (+) da protoboard.
+Pino GND do Arduino Uno -> Linha de Alimentação Negativa (-) da protoboard.
+
+
+POTENCIÔMETRO (Simulador de Pico de Energia)
+Terminal central (sinal) -> Pino A0 do Arduino Uno.
+Terminal esquerdo -> GND.
+Terminal direito -> 5V.
+
+LED VERMELHO (Indicador de Alerta)
+Ânodo (perna maior) -> Pino 9 do Arduino Uno (com resistor de 220Ω em série).
+Cátodo (perna menor) -> GND.
+
+LED VERDE (Indicador de Tomada Ligada)
+Ânodo (perna maior) -> Pino 6 do Arduino Uno (com resistor de 220Ω em série).
+Cátodo (perna menor) -> GND.
+
+BUZZER (Alarme Sonoro)
+Pino positivo (+) -> Pino 5 do Arduino Uno.
+Pino negativo (-) -> GND.
+
+DISPLAY OLED (I2C - Adafruit SSD1306)
+Pino GND do display -> Linha Negativa (-) da protoboard.
+Pino VCC do display -> Linha Positiva (+) de 5V.
+Pino SDA do display -> Pino A4 do Arduino Uno.
+Pino SCL do display -> Pino A5 do Arduino Uno.
+
+RESUMO DE PINOS UTILIZADOS:
+
+Componente	        Pino Arduino	    Função
+Potenciômetro	    A0	                Leitura analógica
+OLED SDA	        A4	                Comunicação I2C
+OLED SCL	        A5	                Comunicação I2C
+Buzzer	            5	                Alarme sonoro
+LED Verde	        6	                Indicador de tomada ativa
+LED Vermelho	    9	                Indicador de alerta
+GND	                -	                Referência comum
+5V	                -	                Alimentação principal
+
+----------------------------------------------------------------
+
+OBSERVAÇÕES:
+
+Todos os LEDs devem possuir resistores entre 220Ω e 330Ω.
+
+O circuito é projetado para prototipagem.
+
+Caso possua um capacitor eletrolítico (100µF), ele pode ser ligado entre o + e o - da protoboard para maior estabilidade, mas não é obrigatório.
+
+O display OLED mostrará as mensagens do sistema conforme o estado do circuito.
