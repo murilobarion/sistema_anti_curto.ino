@@ -7,16 +7,23 @@ O dispositivo é totalmente protótipo e didático, sem conexão direta com a re
 
 ## Funcionalidades Principais
 
-Detecção de Pico de Energia: O sistema utiliza um potenciômetro para simular variações de tensão. Quando o valor máximo é atingido, o sistema aciona um alarme sonoro e visual.
+### Detecção de Pico de Energia: 
 
-Alerta Visual:
+O sistema utiliza um potenciômetro para simular variações de tensão. Quando o valor máximo é atingido, o sistema aciona um alarme sonoro e visual.
+
+### Alerta Visual:
+
 LED Vermelho: Acende quando ocorre um pico de energia, permanecendo aceso durante o alarme.
 LED Verde (Tomada): Representa a energia disponível na tomada; é desligado durante o alarme e volta a acender quando o sistema retorna ao estado normal.
 
-Alerta Sonoro: Um buzzer emite um sinal de alarme por 4 segundos quando detectado o pico.
+### Alerta Sonoro: 
+
+Um buzzer emite um sinal de alarme por 4 segundos quando detectado o pico.
 Interface OLED: Exibe mensagens centralizadas no display, informando o status atual do sistema, como "Sistema pronto", "AVISO: Pico de energia!" ou "Sistema resetado".
 
-Reset Manual: Ao girar o potenciômetro para baixo durante o alarme, o sistema entra em modo de reset por 3 segundos, mantendo o LED vermelho aceso, antes de voltar ao estado normal.
+### Reset Manual: 
+
+Ao girar o potenciômetro para baixo durante o alarme, o sistema entra em modo de reset por 3 segundos, mantendo o LED vermelho aceso, antes de voltar ao estado normal.
 
 ## Componentes de Hardware
 
