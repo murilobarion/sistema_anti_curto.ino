@@ -21,13 +21,21 @@ Reset Manual: Ao girar o potenciômetro para baixo durante o alarme, o sistema e
 ## Componentes de Hardware
 
 1x Arduino Uno
+
 1x Potenciômetro (para simular pico de tensão)
+
 1x Buzzer Passivo
+
 1x LED Vermelho (5mm)
+
 1x LED Verde (5mm) – Representa a tomada
+
 2x Resistores de 220Ω (para LEDs)
+
 1x Display OLED 128x64 I2C (Adafruit)
+
 1x Protoboard
+
 Jumpers (macho-macho)
 
 ## Bibliotecas de Software
@@ -38,7 +46,11 @@ Wire – Para comunicação I2C com o display
 
 ## Instruções de Uso
 Montagem: Monte o circuito conforme especificado no arquivo esquematicos/guia_de_conexoes.txt.
+
 Alimentação: Conecte o Arduino Uno a uma fonte USB de 5V (carregador de celular ou computador). O LED verde acenderá indicando que a tomada está “ativa”.
+
 Simulação de Pico: Gire o potenciômetro para o máximo. O sistema acionará o LED vermelho e o buzzer, desligando temporariamente o LED verde. Após 4 segundos, o buzzer para e o LED vermelho permanece por mais 10 segundos antes de voltar ao estado normal.
+
 Reset Manual: Gire o potenciômetro para baixo durante o alarme ou LED fixo. O sistema entra em modo reset por 3 segundos com o LED vermelho aceso e, em seguida, retorna ao estado normal com o LED verde aceso.
+
 Visualização do Status: O display OLED exibirá mensagens centralizadas sobre o estado atual do sistema, atualizando automaticamente conforme mudanças no potenciômetro.
