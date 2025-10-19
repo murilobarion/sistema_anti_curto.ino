@@ -48,7 +48,9 @@ Jumpers (macho-macho)
 ## Bibliotecas de Software
 
 As seguintes bibliotecas precisam ser instaladas na IDE Arduino através do "Gerenciador de Bibliotecas":
+
 U8g2 – Para controle do display OLED
+
 Wire – Para comunicação I2C com o display
 
 ## Instruções de Uso
